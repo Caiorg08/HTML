@@ -1,118 +1,204 @@
 <!DOCTYPE html>
-<!--inicio da estrutura HTML-->
 <html lang="pt-BR">
 <head>
-<!--cabeçalho da pagina-->
-<title> coisas aleatorias</title>
-<meta charset="UTF-8">
-<style>
-    th, td {
-      border-style:solid;
-      border-color: #f80000;
-    }
-    body {
-  background-image:url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/08/53138040273_4ee0c48b1b_o.jpg?w=880');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-position-y: center;
-}
-a{color: aliceblue;}
-    
-    
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <style>
+        /* Estilos básicos da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho com logo */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px; /* Alterar o tamanho do logo */
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Seção de carros */
+        .car-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-section h2 {
+            font-size: 2em;
+        }
+
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .car-card h3 {
+            color: #333;
+        }
+
+        .car-card p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Formulário de contato */
+        .contact-section {
+            background-color: #333;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section input, .contact-section textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #45a049;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
-<body style="background-color:rgb(255, 255, 255);">
-<!--corpo da pagina-->
-    <h1 style="background-color:rgb(248, 2, 2);text-align: center;"> BEM VINDO!!</h1>
-    <ul style="text-align: center; list-style-type: none;">
-        <li><a href="#tabela">Tabela</a> | </li>
-    </ul>    
-<img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/Deyverson-Atletico-River-Libertadores-e1729645469442.jpg?w=420&h=240&crop=1&quality=85" alt="foto do galo" width="300" height="300">
-<p style="color:rgb(255, 0, 0);color: aliceblue;">estou no senai com fome </p>
-<h2 style="border:2px solid rgb(255, 0, 0);color: aliceblue;"> caio rodrigues gomes</h2>
-<p style="color: aliceblue;">hj foi um dia normal, não fiz nada de muito diferente</p>
+<body>
 
-<h3 id="titulo1" style="color: rgb(255, 255, 255);">Tabela</h3>
-<section id="tabela"></section>
-<table style="width:50%;color: rgb(255, 255, 255)">
-<tr>
-    <th>caio</th>
-    <th>familia</th>
-    <th>carros</th>
-    <th>lugares FV</th>
-</tr>
-<tr>
-    <td>alto</td>
-    <td>mãe</td>
-    <td>GTR34</td>
-    <td>praia</td> 
-</tr>   
-<tr>
-    <td>estiloso</td>
-    <td>irmã</td>
-    <td>lancer</td>
-    <td>italia</td>
-</tr>
-<tr>
-    <td>extrovertido</td>
-    <td>irmão</td>   
-    <td>Porche 911</td>
-    <td>Hollywood</td>
-</tr>
-<tr>
-    <td>engraçado</td>
-    <td>padrasto/pai</td>
-    <td>BMW M4</td>
-    <td>Las Vegas</td>
-</tr>
-</table>  
-<br>
+    <!-- Cabeçalho com logo -->
+    <header>
+        <img src="https://mgveiculosrs.com.br/images/logo.png" alt="Logo da Loja de Carros"> <!-- Altere o caminho da imagem do logo -->
+    </header>
 
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#carros">Carros</a>
+        <a href="#contato">Contato</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="motos.html">Outro site</a>
+    </nav>
 
-<ul>
-    <!--link para ir para o site do galo-->
-    <li><a href="https://atletico.com.br/" target="_blank">Galooooo</a></li>
-    <!--para ir para o chatgpt-->
-    <li><a href="https://openai.com/">melhor site de pesquisa e respostas rapidas</a></li>
-    <!--para baixar arquivo-->
-    <li><a href="downloads/Atividade01EAD-SGBD.docx">Atividade</a></li>
-    <!--entrar em contato-->
-    <li><a href="https://wa.me/5531994464979?text=oii">contato</a></li>
-    <!--para entrar em contato via email-->
-    <li><a href="mailto:0001107439@senaimgaluno.com.br?subject=qualquer+coisa&body=oii,+me+chame+por+email">email</a></li>
-</ul>
-<!--seção galo-->
-<section id="Galo">
- <h4 style="color: aliceblue;">Sobre o galo</h4>  
- <form>
-    <label style="color: aliceblue;" for="nome">Nome do seu jogador preferido:</label>
-    <input style="color: aliceblue;" type="text" id="nome" name="nome" placeholder="nome do jogador" required>
-    <br><br>
+    <!-- Seção de Carros Disponíveis -->
+    <section id="carros" class="car-section">
+        <h2>Carros Disponíveis</h2>
+        <div class="car-cards">
+            <!-- Cartão de carro 1 -->
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/OIP.MwgEreerLFCVU2odT_POlQHaE7?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 1"> <!-- Altere para a imagem do carro 1 -->
+                <h3>ferrari F40</h3>
+                <p>Preço: R$ 23.000.000,00</p>
+                <p>A Ferrari F40 é um automóvel superesportivo coupé de duas portas, de tração traseira e motor central-traseiro, projetado com conceitos aerodinâmicos utilizados em carros de competição.</p>
+            </div>
+            <!-- Cartão de carro 2 -->
+            <div class="car-card">
+                <img src="https://th.bing.com/th/id/OIP.renOdFpu0SV8u6J70AWzUAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 2"> <!-- Altere para a imagem do carro 2 -->
+                <h3>BMW 320i</h3>
+                <p>Preço: R$ 332.950,00</p>
+                <p>BMW 320 foi um carro fabricado pela BMW na Alemanha de 1937 a 1938, como sucessor do BMW 329 baseado no 319. Foi oferecido em versões sedã de 2 portas e conversível. Aproximadamente 4.200 carros foram feitos, dos quais 1.835 eram cabriolets. </p>
+            </div>
+            <!-- Cartão de carro 3 -->
+            <div class="car-card">
+                <img src="https://cdn.motor1.com/images/mgl/9mNXkX/s1/q-by-aston-martin-new-york.jpg" alt="Carro 3"> <!-- Altere para a imagem do carro 3 -->
+                <h3>Aston Martin DB12</h3>
+                <p>Preço: R$ 3.600.000,00</p>
+                <p>O Aston Martin DB12 é um carro de turismo produzido pela fabricante britânica Aston Martin. O carro foi revelado em maio de 2023 como substituto do DB11. O DB12 foi apresentado em 24 de maio de 2023 no Festival de Cinema de Cannes de 2023. O DB12 também é o primeiro veículo da Aston Martin a usar o novo logotipo da marca.</p>
+            </div>
+        </div>
+    </section>
 
-    <label style="color: aliceblue;" for="melhor jogador">Melhor jogador do galo (na sua opinião):</label>
-    <input style="color:black;" type="melhor jogador" id="melhor jogador" name="melhor jogador" placeholder="nome do jogador" required>
-    <br><br>
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact-section">
+        <h2>Entre em Contato Conosco</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
 
-      <!-- Botão de envio -->
-      <button type="submit">Enviar Mensagem</button>
-    </form>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Loja de Carros. Todos os direitos reservados.</p>
+    </footer>
+    <section id="site2">
+        <a href="https://caiorg08.github.io/HTML/;">site</a>
+    </section>
 
 </body>
 </html>
-<!--fim do HTML-->
