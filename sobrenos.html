@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <style>
+        /* Estilos básicos da página */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho com logo */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            /* Alterar o tamanho do logo */
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Seção de carros */
+        .car-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-section h2 {
+            font-size: 2em;
+        }
+
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .car-card h3 {
+            color: #333;
+        }
+
+        .car-card p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Formulário de contato */
+        .contact-section {
+            background-color: #333;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #45a049;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logo -->
+    <header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0"
+            alt="Logo da Loja de Carros"> <!-- Altere o caminho da imagem do logo -->
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </nav>
+
+    <!-- Seção de Carros Disponíveis -->
+
+    <h2 style="text-align: center;">Sobre Nós</h2>
+    <p style="text-align: center;"> A Hayato é uma loja especializada na venda de veículos, conhecida pela qualidade de
+        seu atendimento e pela diversidade de modelos oferecidos.<br>A loja pode trabalhar com uma variedade de carros
+        novos, seminovos e até mesmo de luxo, dependendo do seu foco no mercado. A ideia central de uma loja como a
+        Hayato é oferecer aos clientes não apenas bons preços, mas também uma experiência de compra diferenciada, com
+        consultoria especializada, financiamento acessível e garantia de qualidade nos veículos vendidos.
+        Além disso, uma loja como a Hayato pode se destacar por seu compromisso com a transparência, oferecendo aos
+        clientes informações detalhadas sobre<br> o histórico de cada veículo, revisões feitas, quilometragem e outros
+        aspectos importantes para quem está comprando um carro. O atendimento personalizado, com vendedores bem
+        treinados, também é um ponto de destaque, garantindo que cada cliente encontre o carro ideal para suas
+        necessidades
+        Se a Hayato for uma loja de renome em sua região, ela provavelmente também tem um bom relacionamento com
+        fornecedores e parcerias com financeiras,<br> oferecendo condições de pagamento facilitadas e descontos
+        especiais em veículos de estoque.</p>
+
+    <h3 style="text-align: center;">
+        A Hayato pode ser uma loja de veículos com foco em um atendimento personalizado e
+        uma oferta diversificada,<br> com diferentes tipos de carros para atender a variados perfis de clientes. Vou
+        descrever alguns aspectos que poderiam<br> caracterizar a loja, baseados em como ela poderia se destacar no
+        mercado de vendas de veículos:</h3>
+
+
+    <div style="margin: 50px;">
+        <h1>1. Variedade de Veículos</h1>
+        A Hayato pode oferecer uma ampla gama de modelos de veículos, incluindo:
+        Carros novos: Modelos das marcas mais populares e renomadas, com garantia de fábrica e condições
+        especiais
+        para quem busca carro zero quilômetro.
+        Seminovos e usados: Veículos com preços mais acessíveis, mas com o compromisso de passar por rigorosas
+        inspeções de qualidade para garantir segurança e desempenho. Pode incluir desde carros compactos até
+        SUVs e
+        modelos de luxo.
+        Carros de luxo e esportivos: Para um público mais exclusivo, a loja poderia contar com carros de marcas
+        como
+        BMW, Audi, Mercedes-Benz, Porsche, entre outros, com alto padrão de qualidade e sofisticação.
+        <br>
+        <h1>2. Serviços Oferecidos</h1>
+        Além de vender veículos, a Hayato poderia se destacar por oferecer uma série de serviços complementares para
+        melhorar a experiência do cliente:
+        Financiamento e consórcios: Parcerias com bancos e financeiras para oferecer planos de pagamento
+        facilitados, incluindo financiamento com juros baixos ou consórcios para quem deseja pagar à vista
+        futuramente.
+        Troca de veículos: Um programa de troca de carros que possibilita ao cliente entregar seu veículo usado como
+        parte do pagamento de um modelo mais novo ou mais caro, facilitando a negociação.
+        Assistência pós-venda: Garantia de qualidade e revisão do veículo após a compra, com suporte técnico e
+        serviços de manutenção, como troca de óleo, alinhamento, balanceamento e verificação do motor.
+        <br>
+        <h1>3. Atendimento Personalizado</h1>
+        A Hayato pode se destacar pela atendimento personalizado, com vendedores treinados para compreender as
+        necessidades do cliente e oferecer o veículo que mais se encaixa no seu perfil. Além disso, um suporte
+        online (seja por chat ou chamadas) pode garantir que os clientes tirem dúvidas mesmo antes de visitar a loja
+        fisicamente.
+        <br>
+        <h1>4. Infraestrutura e Localização</h1>
+        A loja poderia ter um showroom moderno e bem organizado, com carros expostos de maneira a facilitar a
+        escolha do cliente, além de test-drives para que o comprador possa experimentar o veículo antes de tomar a
+        decisão final. A localização da loja também seria estratégica, em uma área de fácil acesso para que a
+        experiência de compra seja conveniente.
+        <br>
+        <h1>5. Marketing e Promoções</h1>
+        Para atrair novos clientes e fidelizar os antigos, a Hayato poderia investir em campanhas promocionais
+        periódicas, como:<br>
+        Promoções de fim de ano ou de liquidação de estoque.
+        Descontos especiais para clientes fiéis ou para quem indica novos compradores.
+        Eventos exclusivos para lançamento de novos modelos ou celebração de parcerias com marcas renomadas.
+        <h1> 6. Presença Digital</h1>
+        Para alcançar um público mais amplo e oferecer praticidade aos seus clientes, a Hayato também poderia ter
+        uma plataforma digital robusta:
+        Um site de fácil navegação, onde o cliente pode consultar o estoque de veículos, obter informações
+        detalhadas sobre cada modelo, simular financiamentos e até agendar visitas ou test-drives.
+        Redes sociais para divulgar as ofertas, promover o engajamento com os clientes e criar uma comunidade de
+        entusiastas de carros.
+        <h1>7. Transparência e Qualidade</h1>
+        <p>A Hayato pode ser conhecida pela transparência no processo de venda, oferecendo aos clientes relatórios
+            completos sobre o histórico do veículo (principalmente nos seminovos), com informações sobre acidentes
+            anteriores, quilometragem real e revisões realizadas. </p>
+    </div>
+    <!-- Rodapé -->
+    
+
+</body>
+
+</html>

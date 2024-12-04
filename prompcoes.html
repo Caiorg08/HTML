@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Estilos básicos da página */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho com logo */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            /* Alterar o tamanho do logo */
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+         
+               /* Seção de carros */
+        .car-section {
+            padding: 4px;
+            text-align: center;
+        }
+
+        .car-section h2 {
+            font-size: 2em;
+        }
+
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .car-card {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(246, 245, 245, 0);
+            width: 40%;
+            margin: 9px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .car-card h3 {
+            color: #333;
+        }
+
+        .car-card p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+
+          
+
+
+
+       </style>  
+</head>
+<body>
+       <!-- Cabeçalho com logo -->
+       <header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="bla"
+            alt="Logo da Loja de Carros"> <!--  imagem do logo -->
+    </header>
+
+
+    <nav>
+
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+
+    </nav>
+<h1 style="text-align: center;">Promoções</h1>
+<br>
+<br>
+<section id="carros" class="car-section">
+    <br>    
+    <h2 style="color: rgb(252, 0, 0);">Carros na Promoção!!</h2>
+    <br>
+    <div class="car-cards">
+        <!-- Cartão de carro 1 -->
+        <div class="car-card">
+            <img src="https://avusmotorsports.com.br/wp-content/uploads/2023/05/carros-esportivos-populares.jpg" alt="Carro 1"> <!--  imagem do carro 1 -->
+            <h3>Sandero R.S. 2.0 </h3>
+            <p style="color: #666;"> 124.670 KM</p>
+            <br>
+            <p style="text-decoration: line-through;"> R$ 58.880</p>
+            <p style="color: red;">  Por: R$ 58.879,99</p>
+          
+        </div>
+        <!-- Cartão de carro 2 -->
+        <div class="car-card">
+            <img src="https://th.bing.com/th/id/R.a381ad238077e7efb9b149af0db6f7bc?rik=%2fg61MLPK%2bOk9Sg&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2f1920x1200%2f2011%2fAuto_Mitsubishi_Mitsubishi_Lancer_Evo_X_028944_.jpg&ehk=SJzFTODHxsaZbUdz%2bDOrQ6x9PrMpNl9oUu2Inz0sc1U%3d&risl=&pid=ImgRaw&r=0" alt="Carro 2"> <!--  imagem do carro 2 -->
+            <h3>lancer evo x</h3>
+            <p style="color: #666;">111.356 KM</p>
+            <p style="text-decoration: line-through;">R$ 170.000,00</p>
+            <p style="color: red;"> Por:R$ 155.000,00</p>
+        </div>
+        <!-- Cartão de carro 3 -->
+        <div class="car-card">
+            <img src="https://cdn.motor1.com/images/mgl/9mNXkX/s1/q-by-aston-martin-new-york.jpg" alt="Carro 3"> <!--  imagem do carro 3 -->
+            <h3>Aston Martin DB12</h3>
+            <p>Preço: R$ 3.600.000,00</p>
+            <p>O Aston Martin DB12 é um carro de turismo produzido pela fabricante britânica Aston Martin.Motor V8 biturbo de 600 cv e 800 Nm líder da classe. O resultado é um Aston Martin energizado que brilha com autenticidade, capacidade e paixão para entregar uma experiência de pilotagem incomparável. </p>
+        </div>
+    <div class="car-card">
+        <img src="https://www.agoramotors.com.br/wp-content/uploads/2024/04/Lamborghini-Urus-SE-2025-5-1024x576.jpg" alt="Carro 2"> <!-- imagem do carro 2 -->
+        <h3>Lamborghini Urus S</h3>
+        <p>Preço: R$ 3.290.000,00</p>
+        <p>é um SUV que combina alta performance com praticidade e conforto. Com um motor V8 biturbo de 4.0 litros capaz de gerar 650 cavalos de potência e 850 Nm de torque. </p>
+    </div>
+    <div class="car-card">
+        <img src="https://toyzautoart.com/wp-content/uploads/2024/08/DSC6693-scaled.jpg" alt="Carro 2"> <!-- imagem do carro 2 -->
+        <h3>McLaren 750S</h3>
+        <p>Preço: R$ 4.500.000.0</p>
+        <p>tem um motor twin-turbocharged V8 de 4 litros. É acoplado no centro para uma distribuição de peso ideal. </p>
+    </div>
+    <div class="car-card">
+        <img src="https://cdn.dicklovett.co.uk/uploads/used_stock_image/1_1747458.jpg?v=1723122286" alt="Carro 2"> <!-- imagem do carro 2 -->
+        <h3>Ferrari 296 GTB</h3>
+        <p>Preço: R$  3.929.243</p>
+        <p>Um automóvel tecnicamente revolucionário que apresenta um novo motor V6 de 120° na gama Maranello, associado a um motor elétrico plug-in (PHEV) com o máximo de 830 bhp de potência efetiva.</p>
+    </div>
+    </div>
+
+</section>
+
+

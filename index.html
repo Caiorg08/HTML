@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos básicos da página */
+        @media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+       
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho com logo */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            /* Alterar o tamanho do logo */
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Seção de carros */
+        .car-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-section h2 {
+            font-size: 2em;
+        }
+
+        .car-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .car-card h3 {
+            color: #333;
+        }
+
+        .car-card p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Formulário de contato */
+        .contact-section {
+            background-color: #333;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #45a049;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+            width: 98%;
+            bottom: 0;
+        }
+      
+        .linkcarros{
+            text-align: center;
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #333; 
+            color: black; 
+        }
+        .linkcarros:hover{
+            color: #333;
+
+        }
+
+
+
+        .linkmotos{
+            text-align: center;
+            width: 30%;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #333; 
+            color: black; 
+
+        }
+
+       
+          
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logo -->
+    <header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0"
+            alt="Logo da Loja de Carros"> <!--  imagem do logo -->
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+
+    </nav>
+    <br>
+    <br>
+
+    <!-- Seção de Carros Disponíveis -->
+  
+        <h2 style="text-align: center;"> Bem-vindo à Hayato - Sua Melhor Escolha em Veículos</h2>
+        <br>
+        <br>
+      
+        <h2 style="text-align: center;"> Encontre o Carro dos Seus Sonhos Aqui!</h2>
+        <br>
+        <br>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://blog.autocompara.com.br/wp-content/uploads/2024/06/carros-esportivos.jpeg" width="500" height="700" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="color: #ffffff; text-align: center;" > Carros dos sonhos </h1>
+                  <p>Os melhores carros que você podera encontrar,com preços asseciveis.</p>
+                </div>
+              </div>
+              <div class="carousel-item"data-bs-interval="1300">
+                <img src="https://www.galgo.com/wp-content/uploads/2023/05/5-Tipos-de-Motos-Custom-que-debes-conocer-1.jpg" width="500" height="700"class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Motos dos sonhos</h1>
+                  <p>Aqui vc encontrara motos de todos os tipos, com os melhores preços.</p>
+                </div>
+              </div>
+              <div class="carousel-item"data-bs-interval="2000">
+                <img src="https://www.mundolinhaviva.com.br/blog/wp-content/uploads/2018/11/Mecanico-EPI.jpg" width="500" height="700"  class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Peças para Carros e Motos</h5>
+                  <p>Somente aqui você vai encontrar as melhhores peças para seu veiculo, com preços de fabrica.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+
+        <!--
+        <div class="carousel-control-nextt">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="200">
+                   
+                <img src="https://blog.autocompara.com.br/wp-content/uploads/2024/06/carros-esportivos.jpeg" width="500" height="700" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="color: #ffffff; text-align: center;" > Carros dos sonhos </h1>
+                  <p>Os melhores carros que você podera encontrar,com preços asseciveis.</p>
+                </div>
+              </div>
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://www.galgo.com/wp-content/uploads/2023/05/5-Tipos-de-Motos-Custom-que-debes-conocer-1.jpg" width="500" height="700"class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Motos dos sonhos</h1>
+                  <p>Aqui vc encontrara motos de todos os tipos, com os melhores preços.</p>
+                </div>
+              </div>
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://www.mundolinhaviva.com.br/blog/wp-content/uploads/2018/11/Mecanico-EPI.jpg"  width="500" height="700" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="text-align: center; color: rgb(255, 255, 255)">  Peças para carros e motos </h1>
+                  <p>Você pode encontrar peças para seu veiculo, com preço de fabrica.</p>
+                </div>
+              </div>
+            
+            </div>
+          
+          </div>
+          </div>
+         
+        </div>
+    -->
+          <br>
+          <br>
+
+
+        <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="https://uploads.automaistv.com.br/2024/07/rXwzLmHP-Pagani-Huayra-Epitome-1-jpg.webp" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Variedades de carros</h5>
+                <p class="card-text">Nos oferecemos os melhores carros, semi novos e 0km. Hayato uma das melhoras lojas de vendas de veiculos.</p>
+                <p class="card-text"><small class="text-muted">Última atualização há 3 minutos</small></p>
+                <a href="carros.html" class="linkcarros">Variedades de carros </a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://albamoto.com.br/wp-content/uploads/2022/02/motos-iconicas-1024x674.jpg" width="500px" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Motos</h5>
+                <p class="card-text">A variedade de motos, com os melhoras preços, motos de lançamentos, com desconto e muito mais..</p>
+                <p class="card-text"><small class="text-muted">Última atualização há 7 minutos</small></p>
+                <a href="motos.html" class="linkmotos"> Variedades de motos </a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://www.automaistv.com.br/wp-content/uploads/2019/07/pagani_huayra_roadster_bc_24.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Auto peças</h5>
+                <p class="card-text">Hayato oferece pessas para concerto com um preço muito melhor(caso veiculo comprado na loja)e ainda reparamos danos caso estiver na garantia.</p>
+                <p class="card-text"><small class="text-muted">Última atualização há 10 minutos</small></p>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+     
+        <p style="text-align: center;"   > Na Hayato, somos apaixonados por carros e comprometidos em proporcionar a você a
+            melhor experiência de compra. Seja você um comprador de primeira viagem,<br>um entusiasta de carros de luxo
+            ou alguém em busca de um modelo mais econômico, temos o veículo perfeito para suas necessidades!</p>
+            <div style="margin: 50px;">
+        <h2 style="text-align: center;"> Nossa Especialidade</h2>
+        <p style="text-align: center;">Oferecemos uma ampla seleção de veículos novos, seminovos e de luxo, com a
+            garantia de qualidade e preços competitivos. Nossos carros passam por rigorosas inspeções para garantir que
+            você tenha o melhor em performance, segurança e confiabilidade.
+            O que você encontra na Hayato:
+            Carros Novos: Modelos das melhores marcas, com garantia de fábrica e condições imperdíveis.
+            Seminovos de Qualidade: Carros revisados, com preços acessíveis e ótimo estado de conservação.
+            Carros de Luxo e Esportivos: Para quem busca sofisticação, potência e exclusividade.
+            Financiamento e Consórcio: Planos de pagamento facilitados, com condições especiais para todos os perfis de
+            cliente.
+            Destaques do Mês
+            Promoção Exclusiva de Fim de Ano!
+            Não perca nossas ofertas especiais! Descontos imperdíveis em veículos selecionados e condições de
+            financiamento com taxas reduzidas. Confira agora!</p>
+
+        <h2 style="text-align: center;"> Ver Ofertas</h2>
+
+        <p style="text-align: center;">Por Que Escolher a Hayato?
+            Atendimento Personalizado
+            Nossos consultores especializados estão prontos para ajudar você a encontrar o carro dos seus sonhos.
+            Entendemos suas necessidades e oferecemos as melhores opções para o seu perfil.
+
+            Veículos Inspecionados
+            Todos os carros da Hayato passam por uma rigorosa inspeção para garantir que você leve para casa um produto
+            de qualidade. Transparência é nossa prioridade.
+
+            Facilidade de Pagamento
+            Com planos de financiamento flexíveis e consórcios personalizados, facilitamos a sua compra. Aqui, você
+            encontra condições que cabem no seu bolso!
+
+            Test-Drive? Agende Agora!
+            Nada melhor do que sentir o carro na estrada! Agende um test-drive e experimente a sensação de dirigir seu
+            novo veículo com todo o conforto e performance que você merece.</p>
+
+        <h2 style="text-align: center;"> Agendar Test-Drive</h2>
+
+        <p style="text-align: center;">Nossos Serviços
+            Além de vender carros, a Hayato oferece uma gama de serviços para cuidar do seu veículo:
+
+            Assistência Pós-Venda: Garantia e suporte técnico, para que você tenha tranquilidade mesmo após a compra.
+            Troca de Veículo: Quer trocar seu carro atual por um novo ou seminovo? A Hayato facilita sua negociação!
+            Revisões e Manutenções: Cuide do seu carro com nossa oficina especializada.</p>
+            </div>
+   
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact-section">
+        <h2>Entre em Contato Conosco</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+       
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Loja de Carros. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+
+</body>
+</html>
