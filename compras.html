@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Loja de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .purchase-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .purchase-details h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .purchase-details p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #190c94;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ccc;
+            color: #190c94;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros">
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </nav>
+
+    <div class="purchase-details">
+        <h1>Detalhes da Compra</h1>
+
+        <p><strong>Você escolheu:</strong> <span id="carro-nome"></span></p>
+        <p><strong>Preço:</strong> R$ <span id="carro-preco"></span></p>
+
+        <button class="back-button" onclick="window.location.href='carros.html';">Voltar</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Loja de Carros</p>
+    </footer>
+
+    <script>
+        // Função para obter os parâmetros da URL
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const carro = params.get("carro");
+            const preco = params.get("preco");
+            return { carro, preco };
+        }
+
+        // Exibe os detalhes do carro na página de compras
+        const { carro, preco } = getUrlParams();
+        document.getElementById("carro-nome").textContent = carro;
+        document.getElementById("carro-preco").textContent = preco;
+    </script>
+
+</body>
+</html>

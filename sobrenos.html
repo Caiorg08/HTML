@@ -138,6 +138,72 @@
             width: 100%;
             bottom: 0;
         }
+
+        @media screen and (max-width:1020px) {
+
+            .car-section,
+            .car-card,
+            .car-cards,
+            .car-card img,
+            .filter-card,
+            .search-button,
+            .search-input,
+            .catalog {
+                flex-direction: column;
+            }
+
+            .car-card {
+                width: 80%;
+                margin-left: 35px;
+                padding: 10px;
+                text-align: center;
+            }
+
+
+            .car-card img {
+                width: 280px;
+                height: 200px;
+                border-radius: 20px;
+                padding-right: 0px;
+            }
+
+            .search-input {
+                width: 200px;
+                height: 50px;
+
+                margin-left: 15px;
+
+            }
+
+            .search-button {
+                width: 150px;
+                height: 50px;
+                border-radius: 0px 4px 4px 0px;
+                border: none;
+                background-color: blue;
+                color: white;
+                font-size: 1.1em;
+                transition: 0.2s ease;
+                text-align: center;
+            }
+
+            .title-wrapper-catalog {
+                margin-top: 75px;
+                padding-bottom: 20px;
+            }
+
+            .menu-icon {
+                display: block;
+                /* Exibe o ícone de menu em telas pequenas */
+            }
+
+
+            /*cabeçalho*/
+            nav {
+                display: none;
+            }
+
+        }
     </style>
 </head>
 
@@ -147,6 +213,7 @@
     <header>
         <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0"
             alt="Logo da Loja de Carros"> <!-- Altere o caminho da imagem do logo -->
+            <div class="menu-icon" onclick="openMenu()">&#9776;</div>
     </header>
 
     <!-- Menu de navegação -->
@@ -158,6 +225,15 @@
         <a href="prompcoes.html">Promoções</a>
         <a href="sobrenos.html">Sobre Nós</a>
     </nav>
+    <div id="sideMenu" class="side-menu">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </div>
 
     <!-- Seção de Carros Disponíveis -->
 
@@ -239,7 +315,32 @@
             anteriores, quilometragem real e revisões realizadas. </p>
     </div>
     <!-- Rodapé -->
-    
+
+    <script>
+        // Função para abrir o menu lateral
+        function openMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+        }
+
+        // Função para fechar o menu lateral
+        function closeMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+        }
+
+        document.getElementById('searchButton').addEventListener('click', function () {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const carCards = document.querySelectorAll('.car-card');
+
+            carCards.forEach(function (card) {
+                const carName = card.querySelector('h3').textContent.toLowerCase();
+                if (carName.includes(query)) {
+                    card.style.display = 'block'; // Exibe o carro
+                } else {
+                    card.style.display = 'none'; // Oculta o carro
+                }
+            });
+        });
+    </script>
 
 </body>
 

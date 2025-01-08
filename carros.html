@@ -60,7 +60,7 @@
         }
 
         .car-card {
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(238, 238, 238);
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(246, 245, 245, 0);
             width: 30%;
@@ -70,8 +70,8 @@
         }
 
         .car-card img {
-            width: 50%;
-            height: auto;
+            width: 300px;
+            height: 200px;
             border-radius: 10px;
         }
 
@@ -84,45 +84,29 @@
             color: #666;
         }
 
-        /* Formulário de contato */
-        .contact-section {
-            background-color: #333;
-            color: rgb(6, 6, 6);
-            padding: 40px;
-            text-align: center;
-        }
-
-        .contact-section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .contact-section form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-section input, .contact-section textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-        }
-
-        .contact-section button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
+        /* Barra de pesquisa */
+        .search-input {
+            width: 700px;
+            height: 50px;
             border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
+            border-radius: 4px 0px 0px 4px;
+            text-indent: 10px;
         }
 
-        .contact-section button:hover {
-            background-color: #45a049;
+        .search-button {
+            width: 150px;
+            height: 50px;
+            border-radius: 0px 4px 4px 0px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1.1em;
+            transition: 0.2s ease;
+        }
+
+        .search-button:hover {
+            background: #ccc;
+            color: blue;
         }
 
         /* Rodapé */
@@ -131,9 +115,142 @@
             color: white;
             text-align: center;
             padding: 20px;
-
             width: 100%;
             bottom: 0;
+        }
+
+        section .filter-card {
+            width: 900px;
+            height: 10px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .title-wrapper-catalog{
+            margin-top: 200px;
+            padding-bottom: 20px;
+        }
+
+        .card-item button {
+            width: 90%;
+            padding: 15px 0px;
+            border: none;
+            background: #190c94;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .card-item button:hover {
+            background: #ccc;
+            color: #190c94;
+        }
+
+          /* Ícone do menu (hamburguer) */
+          .menu-icon {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            display: none; /* Escondido por padrão em telas grandes */
+        }
+
+        /* Menu lateral */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #555;
+        }
+
+        .side-menu .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 36px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width:1020px) {
+
+            .car-section,.car-card,.car-cards, .car-card img,.filter-card,.search-button,.search-input,.catalog{
+                flex-direction: column;
+            }
+
+            .car-card {
+            width: 80%;
+            margin-left: 3px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        
+        .car-card img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            padding-right: 20px;
+        }
+        .search-input {
+            width: 200px;
+            height: 50px;
+
+            margin-left: 15px;
+        
+        }
+
+        .search-button {
+            width: 150px;
+            height: 50px;
+            border-radius: 0px 4px 4px 0px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1.1em;
+            transition: 0.2s ease;
+            text-align: center;
+        }
+        .title-wrapper-catalog{
+            margin-top: 75px;
+            padding-bottom: 20px;
+        }
+
+        .menu-icon {
+                display: block; /* Exibe o ícone de menu em telas pequenas */
+            }
+
+           
+            /*cabeçalho*/ 
+            nav{ 
+                display: none;
+            }
+            
         }
     </style>
 </head>
@@ -141,7 +258,9 @@
 
     <!-- Cabeçalho com logo -->
     <header>
-        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros"> <!--  imagem do logo -->
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros">
+    
+        <div class="menu-icon" onclick="openMenu()">&#9776;</div>
     </header>
 
     <!-- Menu de navegação -->
@@ -153,61 +272,136 @@
         <a href="prompcoes.html">Promoções</a>
         <a href="sobrenos.html">Sobre Nós</a>
     </nav>
+    <div id="sideMenu" class="side-menu">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </div>
+
+    <!-- Barra de Pesquisa -->
+    <section class="catalog" id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+                <div class="filter-card">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Buscar">
+                    <button class="search-button" id="searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Seção de Carros Disponíveis -->
     <section id="carros" class="car-section">
         <h2>Carros Disponíveis</h2>
-        <div class="car-cards">
+        <div class="car-cards" id="carCards">
             <!-- Cartão de carro 1 -->
             <div class="car-card">
-                <img src="https://th.bing.com/th/id/OIP.MwgEreerLFCVU2odT_POlQHaE7?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 1"> <!--  imagem do carro 1 -->
-                <h3>ferrari F40</h3>
+                <img src="https://th.bing.com/th/id/OIP.MwgEreerLFCVU2odT_POlQHaE7?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 1">
+                <h3>Ferrari F40</h3>
                 <p>Preço: R$ 23.000.000,00</p>
-                <p>A Ferrari F40 é um automóvel superesportivo coupé de duas portas, de tração traseira e motor central-traseiro.</p>
+                <div class="card-item">
+                    <a href="ferrari-f40.html"><button type="button">Quero este!</button></a>
+                </div>
             </div>
             <!-- Cartão de carro 2 -->
             <div class="car-card">
-                <img src="https://th.bing.com/th/id/OIP.renOdFpu0SV8u6J70AWzUAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 2"> <!--  imagem do carro 2 -->
+                <img src="https://th.bing.com/th/id/OIP.renOdFpu0SV8u6J70AWzUAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Carro 2">
                 <h3>BMW 320i</h3>
                 <p>Preço: R$ 332.950,00</p>
-                <p>BMW 320i é capaz de fazer de 0 a 100 km/h em 4,4 segundos; motor 3.0 de seis cilindros foi desenvolvido exclusivamente para o projeto. </p>
+                <div class="card-item">
+                    <a href="bmw-320i.html"><button type="button">Quero este!</button></a>
+                </div>
             </div>
             <!-- Cartão de carro 3 -->
             <div class="car-card">
-                <img src="https://cdn.motor1.com/images/mgl/9mNXkX/s1/q-by-aston-martin-new-york.jpg" alt="Carro 3"> <!--  imagem do carro 3 -->
+                <img src="https://cdn.motor1.com/images/mgl/9mNXkX/s1/q-by-aston-martin-new-york.jpg" alt="Carro 3">
                 <h3>Aston Martin DB12</h3>
                 <p>Preço: R$ 3.600.000,00</p>
-                <p>O Aston Martin DB12 é um carro de turismo produzido pela fabricante britânica Aston Martin.Motor V8 biturbo de 600 cv e 800 Nm líder da classe. O resultado é um Aston Martin energizado que brilha com autenticidade, capacidade e paixão para entregar uma experiência de pilotagem incomparável. </p>
+                <div class="card-item">
+                    <a href="aston-martin-db12.html"><button type="button">Quero este!</button></a>
+                </div>
             </div>
-        <div class="car-card">
-            <img src="https://www.agoramotors.com.br/wp-content/uploads/2024/04/Lamborghini-Urus-SE-2025-5-1024x576.jpg" alt="Carro 2"> <!-- imagem do carro 2 -->
-            <h3>Lamborghini Urus S</h3>
-            <p>Preço: R$ 3.290.000,00</p>
-            <p>é um SUV que combina alta performance com praticidade e conforto. Com um motor V8 biturbo de 4.0 litros capaz de gerar 650 cavalos de potência e 850 Nm de torque. </p>
+            <!-- Cartão de carro 4 -->
+            <div class="car-card">
+                <img src="https://www.agoramotors.com.br/wp-content/uploads/2024/04/Lamborghini-Urus-SE-2025-5-1024x576.jpg" alt="Carro 4">
+                <h3>Lamborghini Urus S</h3>
+                <p>Preço: R$ 3.290.000,00</p>
+                <div class="card-item">
+                    <a href="lamborghini-urus-s.html"><button type="button">Quero este!</button></a>
+                </div>
+            </div>
+            <!-- Cartão de carro 5 -->
+            <div class="car-card">
+                <img src="https://www.slashgear.com/img/gallery/2024-mclaren-750s-first-drive-even-in-the-rain-the-modern-magic-shines-through/l-intro-1708620709.jpg" alt="Carro 5">
+                <h3>McLaren 750S</h3>
+                <p>Preço: R$ 4.500.000,00</p>
+                <div class="card-item">
+                    <a href="mclaren-750s.html"><button type="button">Quero este!</button></a>
+                </div>
+            </div>
+            <!-- Cartão de carro 6 -->
+            <div class="car-card">
+                <img src="https://cdn.dicklovett.co.uk/uploads/used_stock_image/1_1747458.jpg?v=1723122286" alt="Carro 6">
+                <h3>Ferrari 296 GTB</h3>
+                <p>Preço: R$ 3.929.243</p>
+                <div class="card-item">
+                    <a href="ferrari-296-gtb.html"><button type="button">Quero este!</button></a>
+                </div>
+            </div>
         </div>
-        <div class="car-card">
-            <img src="https://toyzautoart.com/wp-content/uploads/2024/08/DSC6693-scaled.jpg" alt="Carro 2"> <!-- imagem do carro 2 -->
-            <h3>McLaren 750S</h3>
-            <p>Preço: R$ 4.500.000.0</p>
-            <p>tem um motor twin-turbocharged V8 de 4 litros. É acoplado no centro para uma distribuição de peso ideal. </p>
-        </div>
-        <div class="car-card">
-            <img src="https://cdn.dicklovett.co.uk/uploads/used_stock_image/1_1747458.jpg?v=1723122286" alt="Carro 2"> <!-- imagem do carro 2 -->
-            <h3>Ferrari 296 GTB</h3>
-            <p>Preço: R$  3.929.243</p>
-            <p>Um automóvel tecnicamente revolucionário que apresenta um novo motor V6 de 120° na gama Maranello, associado a um motor elétrico plug-in (PHEV) com o máximo de 830 bhp de potência efetiva.</p>
-        </div>
-        </div>
-        
-
-
-
     </section>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Loja de Carros</p>
+    </footer>
 
-   
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const carCards = document.querySelectorAll('.car-card');
 
-   
+            carCards.forEach(function(card) {
+                const carName = card.querySelector('h3').textContent.toLowerCase();
+                if (carName.includes(query)) {
+                    card.style.display = 'block'; // Exibe o carro
+                } else {
+                    card.style.display = 'none'; // Oculta o carro
+                }
+            });
+        });
+    </script>
+
+<script>
+    // Função para abrir o menu lateral
+    function openMenu() {
+        document.getElementById("sideMenu").style.width = "250px";
+    }
+
+    // Função para fechar o menu lateral
+    function closeMenu() {
+        document.getElementById("sideMenu").style.width = "0";
+    }
+
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const carCards = document.querySelectorAll('.car-card');
+
+        carCards.forEach(function(card) {
+            const carName = card.querySelector('h3').textContent.toLowerCase();
+            if (carName.includes(query)) {
+                card.style.display = 'block'; // Exibe o carro
+            } else {
+                card.style.display = 'none'; // Oculta o carro
+            }
+        });
+    });
+</script>
+
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,8 @@
         }
 
         header img {
-            width: 150px; /* Alterar o tamanho do logo */
+            width: 150px;
+            /* Alterar o tamanho do logo */
         }
 
         /* Menu de navegação */
@@ -103,7 +105,8 @@
             align-items: center;
         }
 
-        .contact-section input, .contact-section textarea {
+        .contact-section input,
+        .contact-section textarea {
             width: 80%;
             padding: 10px;
             margin: 10px 0;
@@ -125,6 +128,34 @@
             background-color: #45a049;
         }
 
+        
+
+         /* Barra de pesquisa */
+         .search-input {
+            width: 700px;
+            height: 50px;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+            text-indent: 10px;
+        }
+
+        .search-button {
+            width: 150px;
+            height: 50px;
+            border-radius: 0px 4px 4px 0px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1.1em;
+            transition: 0.2s ease;
+        }
+
+        .search-button:hover {
+            background: #ccc;
+            color: blue;
+        }
+
+
         /* Rodapé */
         footer {
             background-color: #333;
@@ -135,14 +166,164 @@
             width: 100%;
             bottom: 0;
         }
+
+        section .filter-card {
+            width: 900px;
+            height: 10px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .title-wrapper-catalog{
+            margin-top: 200px;
+            padding-bottom: 20px;
+        }
+
+        .card-item button {
+            width: 90%;
+            padding: 15px 0px;
+            border: none;
+            background: #190c94;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .card-item button:hover {
+            background: #ccc;
+            color: #190c94;
+        }
+
+
+         /* Ícone do menu (hamburguer) */
+         .menu-icon {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            display: none; /* Escondido por padrão em telas grandes */
+        }
+
+        /* Menu lateral */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #555;
+        }
+
+        .side-menu .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 36px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        @media screen and (max-width:1020px) {
+
+            .car-section,
+            .car-card,
+            .car-cards,
+            .car-card img,
+            .filter-card,
+            .search-button,
+            .search-input,
+            .catalog {
+                flex-direction: column;
+            }
+
+            .car-card {
+                width: 80%;
+                margin-left: 10px;
+                padding: 25px;
+                text-align: center;
+            }
+
+
+            .car-card img {
+                width: 280px;
+                height: 200px;
+                border-radius: 20px;
+                padding-right: 0px;
+            }
+
+            .search-input {
+                width: 200px;
+                height: 50px;
+
+                margin-left: 15px;
+
+            }
+
+            .search-button {
+                width: 150px;
+                height: 50px;
+                border-radius: 0px 4px 4px 0px;
+                border: none;
+                background-color: blue;
+                color: white;
+                font-size: 1.1em;
+                transition: 0.2s ease;
+                text-align: center;
+            }
+
+            .title-wrapper-catalog {
+                margin-top: 75px;
+                padding-bottom: 20px;
+            }
+
+            .menu-icon {
+                display: block;
+                /* Exibe o ícone de menu em telas pequenas */
+            }
+
+
+            /*cabeçalho*/
+            nav {
+                display: none;
+            }
+
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Cabeçalho com logo -->
     <header>
-        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros"> <!-- Altere o caminho da imagem do logo -->
-    </header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0"
+            alt="Logo da Loja de Carros"> <!-- Altere o caminho da imagem do logo -->
+   
+            <div class="menu-icon" onclick="openMenu()">&#9776;</div>
+        </header>
 
     <!-- Menu de navegação -->
     <nav>
@@ -152,40 +333,115 @@
         <a href="motos.html">Motos</a>
         <a href="prompcoes.html">Promoções</a>
         <a href="sobrenos.html">Sobre Nós</a>
-       
+
     </nav>
 
+    <div id="sideMenu" class="side-menu">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <a href="index.html">Início</a>
+        <a href="#contato">Contato</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </div>
+
+
+     <!-- Barra de Pesquisa -->
+     <section class="catalog" id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+                <div class="filter-card">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Buscar">
+                    <button class="search-button" id="searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+
     <!-- Seção de Carros Disponíveis -->
-   
-        <h2 style="text-align: center;"> Motos Disponíveis</h2>
-        <section>
+
+    <h2 style="text-align: center;"> Motos Disponíveis</h2>
+    <section>
         <div class="car-cards">
             <!-- Cartão de carro 1 -->
             <div class="car-card">
-                <img src="https://th.bing.com/th/id/R.fc48b085deac3da270003f74cfbfc5b9?rik=5mp5yRo11ULTCg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-TsucRn9bpBk%2fUIBmucd93FI%2fAAAAAAAACZQ%2fxB-obtEPc1Q%2fs1600%2fIntruder%2b1500%2ba.jpg&ehk=lWLoWj5pMkftxmD7VdOyfqERoT5WKO58ZFRyaUzy9dc%3d&risl=&pid=ImgRaw&r=0" alt="Carro 1"> <!-- Altere para a imagem do carro 1 -->
+                <img src="https://th.bing.com/th/id/R.fc48b085deac3da270003f74cfbfc5b9?rik=5mp5yRo11ULTCg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-TsucRn9bpBk%2fUIBmucd93FI%2fAAAAAAAACZQ%2fxB-obtEPc1Q%2fs1600%2fIntruder%2b1500%2ba.jpg&ehk=lWLoWj5pMkftxmD7VdOyfqERoT5WKO58ZFRyaUzy9dc%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Carro 1"> <!-- Altere para a imagem do carro 1 -->
                 <h3>Susuki Custon</h3>
                 <p>Preço: R$ 62.000,00</p>
+                <div class="card-item">
+                    <a href="susuki.html"><button type="button">Quero este!</button></a>
+                </div>
             </div>
             <!-- Cartão de carro 2 -->
             <div class="car-card">
-                <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto/sitecoremedialibrary/media-library/images/motorcycles/adventure-touring/tiger%20900%20update/tiger%20900%20gt%20aragon%20edition/bikes-tiger-900-gt-aragon-variant-mc-4-1920x1080.jpg" alt="Carro 2"> <!-- Altere para a imagem do carro 2 -->
+                <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto/sitecoremedialibrary/media-library/images/motorcycles/adventure-touring/tiger%20900%20update/tiger%20900%20gt%20aragon%20edition/bikes-tiger-900-gt-aragon-variant-mc-4-1920x1080.jpg"
+                    alt="Carro 2"> <!-- Altere para a imagem do carro 2 -->
                 <h3>Tiger 900 GT</h3>
                 <p>Preço: R$ 70.000,00</p>
-                
+
             </div>
             <!-- Cartão de carro 3 -->
             <div class="car-card">
-                <img src="https://th.bing.com/th/id/R.c8ac27c2edf4ab514b515750df332681?rik=CxsZkC%2bPrbafBw&riu=http%3a%2f%2fcarroecarros.com.br%2fwp-content%2fuploads%2f2015%2f03%2fNova-Yamaha-XT660R-2015-2016-9.jpg&ehk=%2b%2bT1qx55La%2f1vao6Bcp7jcXDpiLDuzU5e7ltXmvBPpw%3d&risl=&pid=ImgRaw&r=0" alt="Carro 3"> <!-- Altere para a imagem do carro 3 -->
+                <img src="https://th.bing.com/th/id/R.c8ac27c2edf4ab514b515750df332681?rik=CxsZkC%2bPrbafBw&riu=http%3a%2f%2fcarroecarros.com.br%2fwp-content%2fuploads%2f2015%2f03%2fNova-Yamaha-XT660R-2015-2016-9.jpg&ehk=%2b%2bT1qx55La%2f1vao6Bcp7jcXDpiLDuzU5e7ltXmvBPpw%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Carro 3"> <!-- Altere para a imagem do carro 3 -->
                 <h3>XT 660</h3>
                 <p>Preço: R$ 47.300,00</p>
-               
+
             </div>
         </div>
     </section>
 
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const carCards = document.querySelectorAll('.car-card');
+
+            carCards.forEach(function(card) {
+                const carName = card.querySelector('h3').textContent.toLowerCase();
+                if (carName.includes(query)) {
+                    card.style.display = 'block'; // Exibe o carro
+                } else {
+                    card.style.display = 'none'; // Oculta o carro
+                }
+            });
+        });
+    </script>
+
+<script>
+    // Função para abrir o menu lateral
+    function openMenu() {
+        document.getElementById("sideMenu").style.width = "250px";
+    }
+
+    // Função para fechar o menu lateral
+    function closeMenu() {
+        document.getElementById("sideMenu").style.width = "0";
+    }
+
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const carCards = document.querySelectorAll('.car-card');
+
+        carCards.forEach(function(card) {
+            const carName = card.querySelector('h3').textContent.toLowerCase();
+            if (carName.includes(query)) {
+                card.style.display = 'block'; // Exibe o carro
+            } else {
+                card.style.display = 'none'; // Oculta o carro
+            }
+        });
+    });
+</script>
+
 
     <!-- Rodapé -->
-   
+
 
 </body>
+
 </html>

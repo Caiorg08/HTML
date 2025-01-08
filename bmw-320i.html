@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW 320i - Detalhes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .car-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-details img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .car-details h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .car-details p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #190c94;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ccc;
+            color: #190c94;
+        }
+        .buy-button {
+            background-color: #d30c0c;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: 0.3s;
+        
+        }
+        .buy-button:hover{
+            background-color: #ccc;
+            color: #df0808;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros">
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="motos.html">Motos</a>
+        <a href="prompcoes.html">Promoções</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+    </nav>
+
+    <div class="car-details">
+        <h1>BMW 320i</h1>
+        <img src="https://th.bing.com/th/id/OIP.renOdFpu0SV8u6J70AWzUAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="BMW 320i">
+        <p><strong>Preço:</strong> R$ 332.950,00</p>
+        <p><strong>Ano:</strong> 2023</p>
+        <p><strong>Características:</strong> Motor 2.0 turbo, 184 hp, 0-100 km/h em 7 segundos.</p>
+        <p><strong>Desempenho:</strong> Velocidade máxima de 240 km/h.</p>
+        
+        <button class="back-button" onclick="window.location.href='carros.html';">Voltar</button>
+
+        <button class="buy-button" onclick="window.location.href='compras.html?carro=BMW+320i&preco= 332.950,00';">Comprar</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Loja de Carros</p>
+    </footer>
+
+</body>
+</html>
