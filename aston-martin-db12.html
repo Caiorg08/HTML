@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,26 +97,34 @@
             font-size: 1.1em;
             margin-top: 20px;
             transition: 0.3s;
-        
+
         }
-        .buy-button:hover{
+
+        .buy-button:hover {
             background-color: #ccc;
             color: #df0808;
 
         }
 
+        nav {
+
+            display: none;
+        }
+
         @media screen and (max-width:1020px) {
-            .nav{ 
+            .nav {
                 display: none;
             }
-            
+
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0" alt="Logo da Loja de Carros">
+        <img src="https://th.bing.com/th/id/R.29f50ffe00f3b75dca6ce48073505ddb?rik=%2bWgPhfBvlGF1AA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcamaro-silhouette%2fcamaro-silhouette-14.png&ehk=Q2ZKKZRoVxIzW9NEmIvfsgZqLWfL8CKnhyy%2f52Qto8M%3d&risl=&pid=ImgRaw&r=0"
+            alt="Logo da Loja de Carros">
     </header>
 
     <nav>
@@ -133,10 +142,11 @@
         <p><strong>Ano:</strong> 2023</p>
         <p><strong>Características:</strong> Motor V8 4.0 turbo, 660 hp, 0-100 km/h em 3.2 segundos.</p>
         <p><strong>Desempenho:</strong> Velocidade máxima de 325 km/h.</p>
-        
+
         <button class="back-button" onclick="window.location.href='carros.html';">Voltar</button>
 
-        <button class="buy-button" onclick="window.location.href='compras.html?carro=Aston+Martin+DB12&preco=3.600.000,00';">Comprar</button>
+        <button class="buy-button"
+            onclick="window.location.href='compras.html?carro=Aston+Martin+DB12&preco=3.600.000,00';">Comprar</button>
     </div>
     </div>
 
@@ -145,4 +155,5 @@
     </footer>
 
 </body>
+
 </html>
