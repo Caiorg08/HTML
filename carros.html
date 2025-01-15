@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            overflow-x: hidden;
         }
 
         /* Cabeçalho com logo */
@@ -201,6 +202,7 @@
 
             .car-section,.car-card,.car-cards, .car-card img,section.filter-card,.search-button,.search-input,.catalog{
                 flex-direction: column;
+                width: 100%;
             }
 
             .car-card {
@@ -222,14 +224,13 @@
                 height: 48px;
                 border-radius: 4px 4px 4px 4px;
                 padding: 10px;
-                margin-left: 8%;
+                margin-left: 8%;/* Ajuste para tirar a margem à direita */
 
             }
 
             .search-button {
-                width: 60%; 
-                
-                height: 47px;
+                width: 30%; /* Ajuste para ocupar o restante da largura disponível */
+                height: 68px;
                 border-radius: 4px 4px 4px 3px;
                 border: none;
                 background-color: blue;
@@ -257,14 +258,13 @@
             }
 
             section .filter-card {
-            width: 500px;
-            height: 30px;
-            margin-left: 50px;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0px 0px 0px 4px
-          
-        }
+                width: 100%;
+                height: 30px;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px 0px 0px 4px;
+            }
 
             
         }
